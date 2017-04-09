@@ -33,3 +33,36 @@ Sample Output
 
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+#include <vector>		// for vector use
+#include <algorithm>	// for sort use
+using namespace std;
+vector<int> addr;
+
+int main()
+{
+	int i, a, b, c;
+	// test case
+	cin >> a;
+	while (a--) {
+		int sum=0;
+		// number of neighbors
+		cin >> b;
+		addr.clear();
+		for (i=0;i<b;i++) {
+			// location of neighbors
+			cin >> c;	
+			addr.push_back(c);
+		}
+		// sort
+		sort(addr.begin(), addr.end());
+		// middle number
+		int mid=addr[b/2];
+		for (i=0;i<b;i++) {
+			sum+=abs(addr[i]-mid);
+		}
+		cout << sum << endl;
+	}
+}
