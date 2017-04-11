@@ -32,3 +32,26 @@ Case 2: 8
 
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, a, b, count=1;
+	cin >> n;
+	while (n--){
+		int sum=0;
+		cin >> a >> b;
+		// if a is even number, a++
+		if (a%2!=1){
+			a+=1;
+		}
+		for (int i=a; i<=b; i+=2){
+			sum+=i;
+		}
+		cout << "Case " << count << ": " << sum << endl;
+		count++;
+	}
+}
