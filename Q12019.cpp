@@ -47,3 +47,25 @@ Sunday
 Saturday
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, a, b;
+	int month[12]={31,28,31,30,31,30,31,31,30,31,30,31};
+	// 12/31 is Friday, start from it
+	string date[7]={"Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"};
+	cin >> n;
+	while (n--){
+		int sum=0;
+		cin >> a >> b;
+		for(int i=0;i<a-1;i++){
+			sum+=month[i];
+		}
+		sum+=b;
+		cout << date[sum%7] << endl;
+	}
+}
