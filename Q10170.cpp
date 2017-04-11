@@ -36,3 +36,20 @@ Sample Output
 
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int start=0, i=0;
+	while (cin >> start){
+		long long int day=0;
+		cin >> day;
+		for (i=start; day>0; i++){
+			day-=i;
+		}
+		cout << i-1 << endl;
+	}
+}
