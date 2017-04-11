@@ -30,3 +30,35 @@ Not jolly
 
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+	int n, a;
+	while(cin >> n >> a){
+		int count, b, skip=0;
+		vector<int> v;
+		count=n;
+		while(--count){
+			cin >> b;
+			v.push_back(abs(a-b));
+			a=b;
+		}
+		sort(v.begin(), v.end());
+		for (int i=1;i<n;i++){
+			if (v[i-1]!=i){
+				skip=1;
+			}	
+		}
+		if (skip==0 || n==1){
+			cout << "Jolly" << endl;
+		} else {
+			cout << "Not jolly" << endl;
+		}
+	}
+}
