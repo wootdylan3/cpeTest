@@ -31,3 +31,22 @@ impossible
 
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n, sum, diff, a, b;
+	cin >> n;
+	while (n--){
+		cin >> sum >> diff;
+		a=(sum+diff)/2;
+		b=(sum-diff)/2;
+		if ((a>=0) && (b>=0) && ((sum+diff)%2==0)){
+			cout << a << " " << b << endl;
+		} else{
+			cout << "impossible" << endl;
+		}
+	}
+}
