@@ -46,3 +46,40 @@ Test #2: Non-symmetric.
 
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int nCase, N, a, count=1;
+	char tmp, tmp2;
+	cin >> nCase;
+	while (nCase--){
+		int skip=0, i, j;
+		cin >> tmp  >> tmp2 >> N;
+		int m[100][100];
+		for (j=0; j<N; j++){
+			for (i=0; i<N; i++){
+				cin >> a;
+				m[i][j]=a;
+			}
+		}
+		for (i=0; i<N; i++){
+			for (j=0; j<N-1; j++){
+				if ((m[i][j]!=m[N-1-i][N-1-j])||(m[i][j]<0)){
+					skip=1;
+					break;
+				}
+			}
+		}
+		cout << "Test #" << count << ": ";
+		if (skip==0){
+			cout << "Symmetric." << endl;
+		} else{
+			cout << "Non-symmetric." << endl;
+		}
+		count++;
+	}
+}
