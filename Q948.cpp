@@ -2,7 +2,7 @@
 /* UVa 948 Fibonaccimal Base              */
 /* Author: WootDylan3                     */
 /* Date: 2017/04/16                       */
-/* Time Limit: 10 sec                      */
+/* Time Limit: 10 sec                     */
 /******************************************/
 
 
