@@ -61,3 +61,31 @@ Sample Output
 
 --------------------------------------------------------------------------------
 */
+
+/* C++ */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, a, i, fib[40]={1,2};
+	for (i=2; i<40; i++){
+		fib[i]=fib[i-1]+fib[i-2];
+	}
+	cin >> n;
+	while(n--){
+		int start=0;
+		cin >> a;
+		cout << a << " = ";
+		for (i=39; i>=0; i--){
+			if ((fib[i]>a)&&(start==1)){
+				cout << 0;
+			} else if (fib[i]<=a){
+				cout << 1;
+				start=1;
+				a-=fib[i];
+			}
+		}
+		cout << " (fib)\n";
+	}
+}
