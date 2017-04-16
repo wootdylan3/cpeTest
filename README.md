@@ -13,3 +13,4 @@
 >> [Q11150: Cola](https://github.com/wootdylan3/cpeTest/blob/master/Q11150.cpp)<br>
 >> [Q11063: B2-Sequence](https://github.com/wootdylan3/cpeTest/blob/master/Q11063.cpp)<br>
 >> [Q10071: Back to High School Physics](https://github.com/wootdylan3/cpeTest/blob/master/Q10071.cpp)<br>
+>> [Q948: Fibonaccimal Base](https://github.com/wootdylan3/cpeTest/blob/master/Q948.cpp)<br>
