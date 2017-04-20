@@ -16,3 +16,4 @@
 >> [Q948: Fibonaccimal Base](https://github.com/wootdylan3/cpeTest/blob/master/Q948.cpp)<br>
 >> [Q10019: Funny Encryption Method](https://github.com/wootdylan3/cpeTest/blob/master/Q10019.cpp)<br>
 >> [Q10931: Parity](https://github.com/wootdylan3/cpeTest/blob/master/Q10931.cpp)<br>
+>> [Q10050: Hartals](https://github.com/wootdylan3/cpeTest/blob/master/Q10050.cpp)<br>
